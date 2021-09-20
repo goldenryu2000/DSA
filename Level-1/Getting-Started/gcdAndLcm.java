@@ -7,25 +7,27 @@ public class gcdAndLcm {
         int n1 = sc.nextInt();
         int n2 = sc.nextInt();
      
+        // creating temp variabes for gcd operations
         int tn1 = n1;
         int tn2 = n2;
-        
-        //to find gcd
-        
-        while(tn1%tn2!=0)
+
+        while(tn1%tn2 !=0)
         {
-            int r = tn1%tn2;
-            
+            int rem  = tn1%tn2;
+
+            //updating the values
             tn1 = tn2;
-            tn2 = r;
+            tn2  = rem;
         }
-        
-        //printing gcd
-        System.out.println(tn2);
-        
-        //for lcm using the formula ==> lcm*gcd = n1*n2
-        
-        System.out.println((n1*n2)/tn2);
+
+        int gcd = tn2;
+
+        // for LCM  --> gcd * lcm == n1*n2
+
+        int lcm = (n1*n2)/gcd;
+
+        System.out.println("gcd: " + gcd);
+        System.out.println("lcm: " + lcm);
 
         sc.close();
     }

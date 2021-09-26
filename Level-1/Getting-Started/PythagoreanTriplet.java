@@ -11,7 +11,7 @@ public class PythagoreanTriplet {
         int max = a;
         if (max <= b)
             max = b;
-        else if (max <= c)
+        if (max <= c)
             max = c;
 
         // main logic

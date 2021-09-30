@@ -12,9 +12,8 @@ public class Maximum3DigitFrom4 {
 
         System.out
                 .println(((n1 > n2) ? n1 : n2) > ((n3 > n4) ? n3 : n4) ? ((n1 > n2) ? n1 : n2) : ((n3 > n4) ? n3 : n4));
-        // this above expression in print statement is nothing but:
-        // Math.max(Math.max(n1,n2),Mat.max(n3,n4));
-
+        // this above statement in println is nothing but:
+        // Math.max(Math.max(n1,2),Mat.max(n3,n4));
         scn.close();
     }
 }

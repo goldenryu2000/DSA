@@ -1,4 +1,3 @@
-import java.util.Scanner;
 public class BinarySearch{
     public static int binarySearch(int[] a,int x) {
         int low = 0;
@@ -22,11 +21,7 @@ public class BinarySearch{
         return idx;
     }
     public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
-        int n = 10;
         int[] arr = {0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22};
-
         System.out.println(binarySearch(arr, 10)); 
-        scn.close();
     }
 }
